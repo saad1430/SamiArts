@@ -7,6 +7,7 @@ import { HomeComponent } from './Components/home/home.component';
 import { SteamComponent } from './Components/steam/steam.component';
 
 const routes: Routes = [
+  {path:'', redirectTo:'home',pathMatch:'full'},
   {path:'home',component:HomeComponent},
   {path:'steam',component:SteamComponent},
   {path:'about',component:AboutComponent},
