@@ -7,11 +7,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './Components/home/home.component';
 import { AboutComponent } from './Components/about/about.component';
-import { SteamComponent } from './Components/steam/steam.component';
 import { NotFoundComponent } from './Components/error/not-found/not-found.component';
 // Services Imports
 import {GeneralService} from './Services/general.service';
-import { ContactComponent } from './Components/contact/contact.component'
+import { ContactComponent } from './Components/contact/contact.component';
+import { TwitchComponent } from './Components/twitch/twitch.component';
+import { AnimatedWallpaperComponent } from './Components/animated-wallpaper/animated-wallpaper.component'
 
 
 @NgModule({
@@ -19,9 +20,10 @@ import { ContactComponent } from './Components/contact/contact.component'
     AppComponent,
     HomeComponent,
     AboutComponent,
-    SteamComponent,
     NotFoundComponent,
     ContactComponent,
+    TwitchComponent,
+    AnimatedWallpaperComponent,
   ],
   imports: [
     BrowserModule,
