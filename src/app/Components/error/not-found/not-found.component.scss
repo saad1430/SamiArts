@@ -1,0 +1,30 @@
+.container {
+  height: 83vh;
+}
+
+.error-template {
+  padding: 40px 15px;
+  padding-top: 15%;
+  text-align: center;
+}
+
+.error-actions {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.error-actions .btn {
+  margin-right: 10px;
+}
+
+.btn-danger{
+  background-color: crimson;
+  color:black;
+  border-color: crimson;
+}
+
+.btn-secondary{
+  background-color:darkslategrey;
+  color:black;
+  border-color: darkslategray;
+}

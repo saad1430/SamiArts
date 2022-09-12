@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GeneralService } from './Services/general.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'SamiArts';
+
+  constructor(private general:GeneralService){}
+  title = this.general.title;
+  color=Math.floor(Math.random() * 8);
+  page = false;
+
 }
