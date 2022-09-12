@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GeneralService } from 'src/app/Services/general.service';
 
 @Component({
   selector: 'app-animated-wallpaper',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AnimatedWallpaperComponent implements OnInit {
 
-  constructor() { }
+  constructor(private generel:GeneralService) { }
+
+  title= this.generel.title;
 
   ngOnInit(): void {
   }
