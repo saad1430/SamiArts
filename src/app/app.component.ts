@@ -10,7 +10,8 @@ export class AppComponent {
 
   constructor(private general:GeneralService){}
   title = this.general.title;
-  color=Math.floor(Math.random() * 8);
+  color=Math.floor(Math.random() * 10);
   page = false;
+  year = Date.now();
 
 }

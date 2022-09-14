@@ -19,35 +19,41 @@
 </nav>
 
 <div [ngSwitch]="color" class="mt-1">
-  <body class="container-fluid bg-danger text-dark" *ngSwitchCase="0">
+  <body class="container-fluid bg bg1" *ngSwitchCase="0">
     <router-outlet></router-outlet>
   </body>
-  <body class="container-fluid bg-success text-white" *ngSwitchCase="1">
+  <body class="container-fluid bg bg2" *ngSwitchCase="1">
     <router-outlet></router-outlet>
   </body>
-  <body class="container-fluid bg-danger text-white" *ngSwitchCase="2">
+  <body class="container-fluid bg bg3" *ngSwitchCase="2">
     <router-outlet></router-outlet>
   </body>
-  <body class="container-fluid bg-warning text-black" *ngSwitchCase="3">
+  <body class="container-fluid bg bg4" *ngSwitchCase="3">
     <router-outlet></router-outlet>
   </body>
-  <body class="container-fluid bg-primary text-white" *ngSwitchCase="4">
+  <body class="container-fluid bg bg5" *ngSwitchCase="4">
     <router-outlet></router-outlet>
   </body>
-  <body class="container-fluid bg-secondary text-white" *ngSwitchCase="5">
+  <body class="container-fluid bg bg6" *ngSwitchCase="5">
     <router-outlet></router-outlet>
   </body>
-  <body class="container-fluid bg-success text-dark" *ngSwitchCase="6">
+  <body class="container-fluid bg bg7" *ngSwitchCase="6">
     <router-outlet></router-outlet>
   </body>
-  <body class="container-fluid bg-dark text-white" *ngSwitchCase="7">
+  <body class="container-fluid bg bg8" *ngSwitchCase="7">
     <router-outlet></router-outlet>
   </body>
-  <body class="container-fluid text-white" *ngSwitchDefault>
+  <body class="container-fluid bg bg9" *ngSwitchCase="8">
+    <router-outlet></router-outlet>
+  </body>
+  <body class="container-fluid bg bg10" *ngSwitchCase="9">
+    <router-outlet></router-outlet>
+  </body>
+  <body class="container-fluid bg-dark text-white" *ngSwitchDefault>
     <router-outlet></router-outlet>
   </body>
 </div>
 
 <footer  class="container-fluid bg-danger text-white sticky-bottom">
-  <p class="text-center">Copyrights 2022</p>
+  <p class="text-center pt-2">&copy; Copyrights 2021-{{year|date:'yyyy'}}, <small>{{title}} - All rights reserved</small></p>
 </footer>

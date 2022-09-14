@@ -1,10 +1,55 @@
-nav{
-  border-bottom: 2px solid black;
+nav {
+  margin-bottom: -4px;
 }
 
-footer{
+footer {
   width: 100%;
   height: auto;
-  border-bottom: 1px solid #D43343;
-  border-top: 2px solid black;
+  border-bottom: 2px solid #D43343;
+}
+
+.bg {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.bg1 {
+  background-image: url('../assets/images/bg1.jpg');
+}
+
+.bg2 {
+  background-image: url('../assets/images/bg1.jpg');
+}
+
+.bg3 {
+  background-image: url('../assets/images/bg1.jpg');
+}
+
+.bg4 {
+  background-image: url('../assets/images/bg1.jpg');
+}
+
+.bg5 {
+  background-image: url('../assets/images/bg1.jpg');
+}
+
+.bg6 {
+  background-image: url('../assets/images/bg1.jpg');
+}
+
+.bg7 {
+  background-image: url('../assets/images/bg1.jpg');
+}
+
+.bg8 {
+  background-image: url('../assets/images/sun.gif');
+}
+
+.bg9 {
+  background-image: url('../assets/images/bg1.jpg');
+}
+
+.bg10 {
+  background-image: url('../assets/images/bg1.jpg');
 }
