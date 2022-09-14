@@ -3,20 +3,19 @@
 		<h2 class="headline pb-5">Welcome to <b>{{title}}</b> </h2>
 		<br>
 	</div>
-	<div class="row">
+	<div class="row"  *ngFor="let wp of wallpapers$ | async">
 		<div class="col-sm-1 col-md-1 col-lg-3 col-3 ">
 		</div>
 		<div class=" col-sm-10 col-md-10 col-lg-6 col-6">
 			<div class="card text-bg-dark text-white mb-3">
 				<video loop autoplay class="ratio ratio-16x9" oncontextmenu="return false;">
-          <source src="../../../assets/Videos/test.mp4" type="video/mp4">
+          <source [src]="wp.WP_VID" type="video/mp4">
           Your browser does not support the video.
         </video>
 				<div class="card-body">
-					<h5 class="card-title pacifico-font">Card title</h5>
-					<p class="card-text dancing-font">This is a wider card with supporting text below as a natural lead-in to additional
-						content. This content is a little bit longer.</p>
-					<p class="card-text"><small class="text-muted">Uploaded at: 4:15 PM</small></p>
+					<h5 class="card-title dancing-font">{{wp.WP_TITLE}}</h5>
+					<p class="card-text" style="font-style: italic;">{{wp.WP_DESC}}</p>
+					<p class="card-text float-end" style="font-size: 12px;"><small class="text-muted">Uploaded on: {{wp.WP_POST_TIME | date}}, {{wp.WP_POST_TIME | date:'shortTime'}}</small></p>
 				</div>
 			</div>
 		</div>

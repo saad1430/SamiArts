@@ -1,6 +1,7 @@
 // Angular Imports
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {HttpClientModule} from '@angular/common/http';
 // Moudule Imports
 import { AppRoutingModule } from './app-routing.module';
 // Components Imports
@@ -28,6 +29,7 @@ import { AnimatedWallpaperComponent } from './Components/animated-wallpaper/anim
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [
     GeneralService
