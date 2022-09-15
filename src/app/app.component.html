@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand" routerLink="/home">{{title}}</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -8,11 +8,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
       <div class="d-flex navbar-nav me-4">
-        <a class="nav-link" aria-current="page" routerLinkActive="active" routerLink="/home">Home</a>
-        <a class="nav-link" aria-current="page" routerLinkActive="active" routerLink="/twitch">Twitch Overlay</a>
-        <a class="nav-link" aria-current="page" routerLinkActive="active" routerLink="/wallpaper">Animated Wallpaper</a>
-        <a class="nav-link" aria-current="page" routerLinkActive="active" routerLink="/about">About</a>
-        <a class="nav-link" aria-current="page" routerLinkActive="active" routerLink="/contact">Contact Me</a>
+        <a class="nav-link" aria-current="page" routerLinkActive="active" routerLink="/home">
+          <i class="fa fa-home"></i> Home</a>
+        <a class="nav-link" aria-current="page" routerLinkActive="active" routerLink="/twitch">
+          <i class="fa fa-twitch"></i> Twitch Overlays</a>
+        <a class="nav-link" aria-current="page" routerLinkActive="active" routerLink="/wallpaper">
+          <i class="fa fa-image"></i> Animated Wallpaper</a>
+        <a class="nav-link" aria-current="page" routerLinkActive="active" routerLink="/about">
+          <i class="fa fa-info-circle"></i> About</a>
+        <a class="nav-link" aria-current="page" routerLinkActive="active" routerLink="/contact">
+          <i class="fa fa-comments"></i> Contact</a>
       </div>
     </div>
   </div>
@@ -54,6 +59,6 @@
   </body>
 </div>
 
-<footer  class="container-fluid bg-danger text-white sticky-bottom">
-  <p class="text-center pt-2">&copy; Copyrights 2021-{{year|date:'yyyy'}}, <small>{{title}} - All rights reserved</small></p>
+<footer  class="container-fluid bg-danger text-white">
+  <p class="text-center pt-2"><i class="fa fa-copyright"></i> Copyrights 2021-{{year|date:'yyyy'}} | <small> <a routerLink="/home">{{title}}</a> - All rights reserved</small></p>
 </footer>

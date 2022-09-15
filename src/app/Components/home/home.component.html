@@ -4,7 +4,18 @@
 		<br>
 	</div>
 	<div class="row" *ngFor="let artwork of artworks$ | async">
-		<div class="col-sm-1 col-md-1 col-lg-3 col-3 ">
+		<div class="col-sm-1 col-md-1 col-lg-3 col-3 mb-5">
+			<!-- Ad Sense code -->
+			<script async
+				src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4571822033783821"
+				crossorigin="anonymous"></script>
+			<!-- Vertical ad -->
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4571822033783821"
+				data-ad-slot="4958461138" data-ad-format="auto" data-full-width-responsive="true"></ins>
+			<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+			<!-- Ad ends -->
 		</div>
 		<div class=" col-sm-10 col-md-10 col-lg-6 col-6">
 			<div class="card text-bg-dark text-white mb-3">
@@ -14,29 +25,23 @@
 				<div class="card-body">
 					<h5 class="card-title dancing-font"><b>{{artwork.AW_TITLE}}</b></h5>
 					<p class="card-text" style="font-style: italic;">{{artwork.AW_DESC}}</p>
-					<p class="card-text float-end" style="font-size: 12px;"><small class="text-muted">Uploaded on: {{artwork.AW_POST_TIME | date}}, {{artwork.AW_POST_TIME | date:'shortTime'}}</small></p>
+					<p class="card-text float-end" style="font-size: 12px;"><small class="text-muted">Uploaded on:
+							{{artwork.AW_POST_TIME | date}}, {{artwork.AW_POST_TIME | date:'shortTime'}}</small></p>
 				</div>
 			</div>
 		</div>
+		<div class="col-sm-1 col-md-1 col-lg-3 col-3 mb-5">
+			<!-- Ad Sense code -->
+			<script async
+				src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4571822033783821"
+				crossorigin="anonymous"></script>
+			<!-- Vertical ad -->
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4571822033783821"
+				data-ad-slot="4958461138" data-ad-format="auto" data-full-width-responsive="true"></ins>
+			<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+			<!-- Ad Ends -->
+		</div>
 	</div>
 </div>
-<script>
-	watermark(['../../../assets/images/sun.gif'])
-  .image(text.lowerRight('watermark.js', '48px Josefin Slab', '#fff', 0.5))
-  .then(function (img) {
-    document.getElementById('lower-right').appendChild(img);
-  });
-         
-	// place a watermark in the upper left hand corner of an image
-	watermark(['/img/coffee.jpg', '/img/logo.png'])
-		.image(function (image, logo) {
-			var context = image.getContext('2d');
-			context.save();
-
-			context.globalAlpha = alpha;
-			context.drawImage(logo, 10, 10);
-
-			context.restore();
-			return target;
-		});
-</script>
